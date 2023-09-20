@@ -1,3 +1,4 @@
+<!-- Comment to trigger incremental -->
 <?php include("./server/server.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
