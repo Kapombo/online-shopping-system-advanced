@@ -1,3 +1,4 @@
+//test incrementals
 (function($){"use strict";$('.input100').each(function(){$(this).on('blur',function(){if($(this).val().trim()!=""){$(this).addClass('has-val');}
 else{$(this).removeClass('has-val');}})})
 $('.validate-input .input100').each(function(){$(this).on('blur',function(){if(validate(this)==false){showValidate(this);}
