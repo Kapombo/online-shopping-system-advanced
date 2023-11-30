@@ -6,7 +6,7 @@ pipeline {
 	stages {		
 		stage ('Git SCM') {
 			steps {
-			git changelog: false, credentialsId: 'b44eb99c-187b-4d48-bbf4-a8cda78f4760', poll: false, url: 'https://github.com/Kapombo/online-shopping-system-advanced.git'
+			git changelog: false, credentialsId: 'b44eb99c-187b-4d48-bbf4-a8cda78f4760', poll: false, url: 'git@github.com:Kapombo/online-shopping-system-advanced.git'
 			}
 
 		}
