@@ -17,7 +17,7 @@ pipeline {
 		}
 		stage ('CX Scan') {
 			steps{
-				checkmarxASTScanner additionalOptions:'--scan-types sca',
+				checkmarxASTScanner additionalOptions: '--scan-types sca',
 				baseAuthUrl:'', 
 				branchName:'', 
 				checkmarxInstallation:'CLI', 
