@@ -17,7 +17,7 @@ pipeline {
 		}
 		stage ('CX Scan') {
 			steps{
-				checkmarxASTScanner additionalOptions: '--scan-types sca --project-tags (scid:1234,scid:5678)',
+				checkmarxASTScanner additionalOptions: '--scan-types sca --project-tags scid:1234,scid:5678',
 				baseAuthUrl:'', 
 				branchName:'', 
 				checkmarxInstallation:'CLI', 
