@@ -17,7 +17,7 @@ pipeline {
 		}
 		stage ('CX Scan') {
 			steps{
-				checkmarxASTScanner additionalOptions:'--scan-types sca',
+				checkmarxASTScanner additionalOptions: '--scan-types sca',
 				baseAuthUrl:'', branchName:'', checkmarxInstallation:'CLI', credentialsId:'9937c97a-be69-4b33-a3d1-5547f4621ecf', projectName:'Test_scan_Tags', serverUrl:'https://cxst-qa.perf.cxast.net', tenantName:'single-tenant-perf' 
 					}					
 				}
